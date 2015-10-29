@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="cevsin.com.logi.CorrectAnswer">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:text="Doğru Cevap!"
+        android:textColor="@color/correct_answer"
+        android:id="@+id/correct_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalan Hak"
+        android:layout_below="@+id/correct_text"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:id="@+id/correct_rem_text"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/correct_rem_text"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/correct_rem"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toplam Puan"
+        android:layout_below="@+id/correct_rem"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:id="@+id/correct_points_text"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/correct_points_text"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/correct_points"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="Yeni Soru"
+        android:id="@+id/correct_new_question"
+        android:layout_below="@+id/correct_points"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="Ana Ekran"
+        android:id="@+id/correct_ana_ekran"
+        android:layout_below="@+id/correct_new_question"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

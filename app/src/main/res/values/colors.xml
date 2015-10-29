@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#EBF9FF</color>
+    <color name="register_text">#206B91</color>
+    <color name="white">#FFFFFF</color>
+    <color name="correct_answer">#008000</color>
+    <color name="wrong_answer">#FF0000</color>
+    <color name="logout_button">#8A0808</color>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Logi</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1159392186617217/8489523689</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
